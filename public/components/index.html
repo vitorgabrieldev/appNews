@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Code New - noticias sobre mundo da tecnologia</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tenha em sua tela noticias sobre esse incrivel mundo da tecnologia em sua tela, rapido e prático, de forma simples acesse pelo seu smartphone, computador ou tablet. Mantenha se atualizado;">
+
+    <!-- import BootStrap -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="style/styleComponent.css">
+    <link rel="stylesheet" href="style/mediaQuery.css">
+
+    <noscript>
+        <style>
+            body
+            {
+                background: #f00;
+            }
+        </style>
+    </noscript>
+
+    <!-- scripts -->
+    <script src="scripts/controlsIndex.js" defer></script>
+
+</head>
+<body>
+    
+    <!-- components -->
+
+    <header class="headerPage">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <section class="d-flex">
+                    <i class="bi bi-newspaper fs-1 m-3"></i>
+                    <a class="title-tx" href="/public/components/index.html">
+                        <h1 class="m-3">Tech News</h1>
+                    </a>
+                </section>
+                    <figure class="figuteCite-header" title="Se mantenha atualizado a toda hora !">
+                        <blockquote class="blockquote">
+                            <p>tech news on your screen every day.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">keep up to date <cite>only here</cite></figcaption>
+                     </figure>
+                <div id="openMenu" class="me-5" title="Menu">
+                    <i class="bi bi-list fs-1 btnMenu-page"></i>
+                </div>
+            </div>
+        </nav>
+        <section id="menuHeader" class="menuHeader">
+            <!-- Em Breve -->
+        </section>
+    </header>
+    <section class="content-news">
+        <article class="grid1 bg-dark">
+
+            <figure class="cards">
+                <img src="../src/images/content1.jpg" alt="JavaScript">
+                <figcaption class="description">
+                    JavaScript
+                </figcaption>
+            </figure>
+            <figure class="cards">
+                <img src="../src/images/content2.jpg" alt="Java">
+                <figcaption class="description">
+                    Java
+                </figcaption>
+            </figure>
+            <figure class="cards">
+                <img src="../src/images/content3.jpg" alt="Pynthon">
+                <figcaption class="description">
+                    Pynthon
+                </figcaption>
+            </figure>
+            <figure class="cards">
+                <img src="../src/images/content4.jpg" alt="C#">
+                <figcaption class="description">
+                    C#
+                </figcaption>
+            </figure>
+
+        </article>
+    </section>
+
+</body>
+</html>

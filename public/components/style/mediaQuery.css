@@ -1,0 +1,16 @@
+
+/*===================== RESPONSIVE ============================*/
+
+@media screen and (max-width: 700px){
+    .figuteCite-header
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .bi-newspaper
+    {
+        display: none;
+    }
+}
