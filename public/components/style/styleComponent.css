@@ -1,59 +1,92 @@
-* {
-  color: #fefefe;
+*
+{
+    color: #fefefe;
 }
+body, html
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
 }
-
-.title-tx {
-  text-decoration: none;
+.title-tx
+{
+    text-decoration: none;
 }
 
 /*=========================================== button menu======================= */
-.btnMenu-page:hover {
-  transition: 0.3s;
-  color: #888;
-  cursor: pointer;
+.btnMenu-page:hover
+{
+
+    transition: .3s;
+    color: #888;
+    cursor: pointer;
+
 }
 
-/*Menu Header*/
-.menuHeader {
+
+/*========================================= BreadCrumb content ==========================*/
+
+.BreadCrumb
+{
+  background: rgb(31, 29, 29);
+  padding: .5rem;
+}
+
+.breadcrumb-item
+{
+  font-size: 1.2rem;
+}
+
+/*========================================= Topics left ==================================*/
+
+.content-Tech
+{
   position: absolute;
-  height: 100%;
   width: 30%;
-  margin-left: 100%;
-  background: rgb(27, 27, 27);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
-  transition: 0.3s;
+  border-right: 2px solid #fefefe6c;
+  /* height: 81.5%; */
 }
 
-/*=========================== container cards news =========================*/
-.content-news {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgb(230, 230, 230);
+.container-topics ul
+{
+  list-style: none;
+  height: 70%;
 }
-.content-news .grid1 {
-  margin-top: 8rem;
-  width: 100%;
-  height: 25rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.content-news .grid1 figure.cards img {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 0.7rem;
-  cursor: pointer;
-}
-.content-news .grid1 figure.cards figcaption {
-  font-size: 2rem;
+.items-topics
+{
+  font-size: 1.5rem;
+  font-family: monospace, Arial, Helvetica, sans-serif;
+
+  margin-left: -14%;
   text-align: center;
-  margin-top: 0.5rem;
-}/*# sourceMappingURL=styleComponent.css.map */
+  padding: .7rem;
+  transition: .3s;
+}
+.items-topics:hover
+{
+  background: linear-gradient(90deg, rgba(83, 81, 81, 0.418), transparent);
+}
+
+.items-topics::before
+{
+  content: '>';
+  position: absolute;
+  color: #888;
+  font-size: 1.4rem;
+  font-weight: 900;
+
+  margin-left: -20px;
+
+  display: none;
+}
+.items-topics:hover::before
+{
+  display: inline;
+}
+
+.items-topics a
+{
+  text-decoration: none;
+  color: #888;
+}

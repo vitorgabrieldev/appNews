@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 
-    <title>Code New - noticias sobre mundo da tecnologia</title>
+    <title>Code tech - Informações sobre o mundo da tecnologia...</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tenha em sua tela noticias sobre esse incrivel mundo da tecnologia em sua tela, rapido e prático, de forma simples acesse pelo seu smartphone, computador ou tablet. Mantenha se atualizado;">
+    <meta name="description" content="Tenha em sua tela Informações sobre esse incrivel mundo mundo da tecnologia, seja uma palavra comumente utilizada, ou um lançamento de ferramentas e programas que podem ser uteis em sua vida, tudo isso em um unico lugar.">
 
     <!-- import BootStrap -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -20,76 +20,93 @@
     <link rel="stylesheet" href="style/styleComponent.css">
     <link rel="stylesheet" href="style/mediaQuery.css">
 
-    <noscript>
-        <style>
-            body
-            {
-                background: #f00;
-            }
-        </style>
-    </noscript>
-
     <!-- scripts -->
     <script src="scripts/controlsIndex.js" defer></script>
 
 </head>
-<body>
+<body class="bg-dark">
+
+    <noscript>
+        <h1>Você precisa ativar JavaScript para acessa essa pagina !</h1>
+    </noscript>
     
     <!-- components -->
 
     <header class="headerPage">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-dark bg-dark position-relative">
             <div class="container-fluid">
                 <section class="d-flex">
                     <i class="bi bi-newspaper fs-1 m-3"></i>
                     <a class="title-tx" href="/public/components/index.html">
-                        <h1 class="m-3">Tech News</h1>
+                        <h1 class="m-3">Code tech</h1>
                     </a>
                 </section>
                     <figure class="figuteCite-header" title="Se mantenha atualizado a toda hora !">
                         <blockquote class="blockquote">
-                            <p>tech news on your screen every day.</p>
+                            <p><cite>"A tecnologia move o mundo"</cite></p>
                         </blockquote>
-                        <figcaption class="blockquote-footer">keep up to date <cite>only here</cite></figcaption>
+                        <cite  class="blockquote-footer">Steve Jobs, inventor e fundador da Apple</cite>
                      </figure>
                 <div id="openMenu" class="me-5" title="Menu">
                     <i class="bi bi-list fs-1 btnMenu-page"></i>
                 </div>
             </div>
         </nav>
-        <section id="menuHeader" class="menuHeader">
-            <!-- Em Breve -->
+        <section id="BreadCrumb" class="BreadCrumb">
+            <header class="BreadCrumb-content">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Content</li>
+                    </ol>
+                </nav>
+            </header>
         </section>
     </header>
-    <section class="content-news">
-        <article class="grid1 bg-dark">
-
-            <figure class="cards">
-                <img src="../src/images/content1.jpg" alt="JavaScript">
-                <figcaption class="description">
+    <section class="content-Tech bg-dark">
+        <section class="container-topics">
+            <ul>
+                <li class="items-topics"><a id="locationHtml" href="#">
+                    Html5
+                </a></li>
+                <li class="items-topics"><a href="#">
+                    Css3
+                </a></li>
+                <li class="items-topics"><a href="#">
                     JavaScript
-                </figcaption>
-            </figure>
-            <figure class="cards">
-                <img src="../src/images/content2.jpg" alt="Java">
-                <figcaption class="description">
-                    Java
-                </figcaption>
-            </figure>
-            <figure class="cards">
-                <img src="../src/images/content3.jpg" alt="Pynthon">
-                <figcaption class="description">
-                    Pynthon
-                </figcaption>
-            </figure>
-            <figure class="cards">
-                <img src="../src/images/content4.jpg" alt="C#">
-                <figcaption class="description">
-                    C#
-                </figcaption>
-            </figure>
-
-        </article>
+                </a></li>
+                <li class="items-topics"><a href="#">
+                    Angular
+                </a></li>
+                <li class="items-topics"><a href="#">
+                    React
+                </a></li>
+                <li class="items-topics"><a href="#">
+                    IDES
+                </a></li>
+                <li class="items-topics"><a href="#">
+                    Internet
+                </a></li>
+                <li class="items-topics"><a href="#">
+                    RoadMaps
+                </a></li>
+                <li class="items-topics"><a href="#">
+                    Curriculo
+                </a></li>
+                <li class="items-topics"><a href="#">
+                    recommended
+                </a></li>
+                <li class="items-topics"><a href="#">
+                    Git/GitHub
+                </a></li>
+                <li class="items-topics"><a href="#">
+                    Npm / Yarn
+                </a></li>
+            </ul>
+        </section>
+        <section class="container-content">
+            
+        </section>
     </section>
 
 </body>
